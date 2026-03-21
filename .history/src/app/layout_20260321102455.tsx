@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { LanguageProvider } from "@/i18n/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "Yay Jar | 夸夸瓶",
-  description: "Write little notes to yourself — shake the jar whenever you need a boost. 给未来的自己写下一句鼓励 ✨",
+  title: "夸夸瓶",
+  description: "给未来的自己写下一句鼓励",
 };
 
 export default function RootLayout({
@@ -27,7 +26,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased" suppressHydrationWarning>
-        <LanguageProvider>{children}</LanguageProvider>
+        {children}
       </body>
     </html>
   );

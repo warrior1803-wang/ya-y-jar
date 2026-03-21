@@ -40,8 +40,3 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .claude/worktrees/
-
-.env.local
-.env*.local
-node_modules
-.next

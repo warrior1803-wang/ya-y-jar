@@ -1,0 +1,16 @@
+# Dependencies and build artifacts
+node_modules/
+dist/
+.next/
+
+# Environment variables and secrets
+.env
+.env.local
+*.key
+
+# Logs and cache
+npm-debug.log
+.pytest_cache/
+
+# System files
+.DS_Store

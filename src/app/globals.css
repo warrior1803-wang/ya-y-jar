@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-bg-base:         #FDF8F2;
+  --color-bg-surface:      #FFF9F4;
+  --color-bg-accent:       #FFF3E6;
+  --color-primary:         #F9A875;
+  --color-primary-hover:   #F7935C;
+  --color-primary-soft:    #FDDFC8;
+  --color-accent-lavender: #E8DEFF;
+  --color-accent-rose:     #FFE4E4;
+  --color-text-primary:    #3D2B1F;
+  --color-text-secondary:  #7A5C4F;
+  --color-text-disabled:   #C4A99A;
+  --color-border:          #EDD9C8;
+  --color-divider:         #F3E8DC;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes slip-shake {
+  0%   { transform: translateY(0)   rotate(0deg);  }
+  20%  { transform: translateY(-4px) rotate(-3deg); }
+  50%  { transform: translateY(-7px) rotate(3deg);  }
+  80%  { transform: translateY(-3px) rotate(-1deg); }
+  100% { transform: translateY(0)   rotate(0deg);  }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FDF8F2;
+  color: #3D2B1F;
+  font-family: 'Caveat', 'Ma Shan Zheng', serif;
 }
